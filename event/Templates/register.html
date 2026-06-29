@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+  {% include "head.html"%}
+  
+	
+</head>
+<body>
+  
+  {% include "htemp.html" %}
+
+  
+  <br>
+    <center><h1><b>EVENT ORGANIZER</b></h1></center>
+    <br><br>
+    <center>
+   <h4>Registeration</h4>
+   </center>
+
+   <center>{{msg}}</center>
+   <table align="center" width="60%">
+   	<tr><td>
+   	<form name="register" autocomplete="off" method="post">
+     <font color="red">*</font> Full Name
+     <input required autofocus="on" class="form-control" type="text" name="fullname" >
+     <font color="red">*</font>Mobile Number
+     <input required class="form-control" type="number" name="mobilenumber">
+     <font color="red">*</font>Email Id
+     <input required class="form-control" type="email" name="emailid">
+     <font color="red">*</font>Address
+     <input required class="form-control" type="text" name="address">
+     <font color="red">*</font>Password
+     <input required class="form-control" type="password" name="password">
+     
+     <br/>
+     <center>
+     	<input class="btn btn-success" type="submit" name="register" value="Register">
+     	<input class="btn btn-warning" type="reset" name="cancel" value="Cancel">
+     </center>
+     {%csrf_token%}
+     </form>
+     </td>
+     </tr>
+     </table>
+</body>
+</html>

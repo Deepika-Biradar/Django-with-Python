@@ -1,0 +1,290 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <style>
+        /* style.css*/
+body { 
+  background-color: rgb(165, 192, 201); 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+  color: rgb(239, 238, 220); 
+} 
+
+.container { 
+  height: 414px; 
+  width: 368px; 
+  background-color: rgb(20, 21, 82); 
+  border: 2px solid white; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 15px; 
+  box-shadow: rgba(41, 40, 40, 0.2); 
+  gap: 30px; 
+  transition: transform 0.2s ease-in-out; 
+} 
+
+.container_box { 
+  display: flex; 
+  height: 800px; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 2vw; 
+  flex-wrap: wrap; 
+  margin-top: 20px; 
+} 
+
+.container:hover { 
+  transform: scale(1.1); 
+} 
+
+.cardutility { 
+  height: 80px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
+  font-size: 20px; 
+  border-radius: 10px; 
+} 
+
+.des { 
+  text-align: center; 
+  padding: 5px; 
+  margin: 1px; 
+  border-radius: 10px; 
+  text-justify: auto; 
+} 
+
+.spaceicon { 
+  gap: 10px; 
+} 
+
+#btnid { 
+  border-radius: 100%; 
+  height: 50px; 
+  width: 50px; 
+  position: relative; 
+} 
+
+img { 
+  width: 340px; 
+  height: 230px; 
+  border-radius: 10px; 
+  border: 5px solid white; 
+} 
+
+.course-title { 
+  font-size: 25px; 
+} 
+
+.response { 
+  margin-left: 20px; 
+} 
+
+.ratings { 
+  margin: 15px 0 0 80px; 
+  padding: 3px; 
+} 
+
+.rates { 
+  margin-left: 3px; 
+} 
+
+.explore_link { 
+  border: 1px solid white; 
+  border-radius: 5px; 
+  margin: 2px 0 0 70px; 
+  background-color: aliceblue; 
+} 
+
+.link_a { 
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+} 
+
+@media only screen and (max-width: 376px) { 
+  body { 
+    background-color: rgb(99, 176, 201); 
+  } 
+
+  .container { 
+    height: 300px; 
+    width: 300px; 
+    border-radius: 5px; 
+    gap: 10px; 
+  } 
+
+  img { 
+    width: 240px; 
+    height: 130px; 
+    border-radius: 10px; 
+    border: 5px solid white; 
+    margin-left: 25px; 
+  } 
+
+  .response { 
+    margin-left: 10px; 
+  } 
+
+  .ratings { 
+    margin: 5px 0 0 50px; 
+    padding: 3px; 
+  } 
+
+  .course-title { 
+    font-size: 10px; 
+  } 
+}
+
+    </style>
+  <meta charset="UTF-8"> 
+  <meta name="viewport"
+    content="width=device-width, 
+        initial-scale=1.0"> 
+  <title> 
+    Product Details layout template 
+  </title> 
+  <link rel="stylesheet"
+    href="style.css"> 
+</head> 
+
+<body> 
+  <div class="container_box"> 
+
+    <!-- Card 1 -->
+  <div class="container"> 
+      <div> 
+        <img src= 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVuwwAp7VD6ugtlMe5AwZvF-JB9jfexpZqBFqIz2J6EIysBUTolpBbJD81e_H4UTpyTw&usqp=CAU"
+          alt="GeeksforGeeksImage"> 
+        
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Contemporary Theme 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+           
+        </div> 
+      </div> 
+    </div>  
+
+<div class="container"> 
+      <div> 
+        <img src= 
+"https://wp-media-partyslate.imgix.net/2022/12/austin-powers-21st-birthday-party-in-surrey-uk_1918020.jpg?auto=compress%2Cformat&fit=scale&h=840&ixlib=php-3.3.1&w=1260&wpsize=huge"
+          alt="GeeksforGeeksImage"> 
+         
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Elegant Theme 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          
+        </div> 
+      </div> 
+    </div>  
+    <div class="container"> 
+      <div> 
+        <img src= 
+"https://images-cdn.ubuy.co.in/649d68c2a7427575fb77f755-carnival-circus-theme-party-1st-birthday.jpg"
+          alt="GeeksforGeeksImage"> 
+         
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Carnival Theme 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          
+        </div> 
+      </div> 
+    </div> 
+
+<div class="container"> 
+      <div> 
+        <img src= 
+"https://m.media-amazon.com/images/I/61AQxwF6-TL._AC_UF1000,1000_QL80_.jpg"
+          alt="GeeksforGeeksImage"> 
+         
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Bollywood Theme 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="container"> 
+      <div> 
+        <img src= 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZz4UNOn9AxCnpUqoRNUYx0sH0vL5bJ0rK7q0dVkmZn7mOQHZwLenPud01VB3LmXEsEiY&usqp=CAU"
+          alt="GeeksforGeeksImage"> 
+         
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Coastal Theme
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          
+        </div> 
+      </div> 
+    </div> 
+    <div class="container"> 
+      <div> 
+        <a href="nav">
+        <img src= 
+"https://i.pinimg.com/originals/04/c5/04/04c504d4e55216327fc9a7b4faa61b63.jpg"
+          alt="GeeksforGeeksImage"> 
+        </a>
+        
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+        South Indian Theme
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+
+</body> 
+
+</html>

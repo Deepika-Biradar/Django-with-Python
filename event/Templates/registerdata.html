@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Data</title>
+</head>
+<body>
+	{% include "head.html"%}
+  {% include "htemp.html" %}
+    <br>
+    <center>
+    	<h4>Register Details</h4>
+    </center>
+	<center>
+		<font color="red"> {{msg}} </font>
+	</center>
+	
+	<br>
+	
+	
+<table align="center" border="1" class="table table-bordered">
+	<tr>
+		<th>Id</th>
+		<th>Full Name</th>
+		<th>Address</th>
+		<th>Mobile Number</th>
+		<th>Email Id</th>
+		<th>Delete</th>
+	</tr>
+	
+	{% for d in data %}
+	<tr>
+		<td>{{d.id}}</td>
+		<td>{{d.fullname}}</td>
+		<td>{{d.address}}</td>
+
+		<td>{{d.mobilenumber}}</td>
+		<td>{{d.emailid}}</td>
+		<td>
+		<form name="frm" method="post">
+		<input type="hidden" name="rid" value="{{d.id}}">
+		<input class="btn btn-danger" type="submit" name="delete" value="X">	
+		{%csrf_token%}
+		</form>
+	</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

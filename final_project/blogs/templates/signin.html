@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Sign In</title>
+	
+</head>
+{% include "design/head.html" %}
+<body>
+
+{% include "design/mid.html" %}
+
+  <center><h1><b>EVENT ORGANIZER</b></h1></center>
+    <br><br>
+    <center>
+   <h4>Admin Login</h4>
+   {{msg}}
+
+   </center>
+   <table align="center" width="60%">
+<tr>
+	<td>
+		
+		<b><form name="login" method="post">Email Id</b>
+<input required class="form-control" type="email" name="emailid">
+
+<b>Password</b>
+
+<input required class="form-control" type="password" name="password">
+<center>
+<input class="btn btn-success" type="submit" name="login" value="login">
+<input class="btn btn-warning" type="reset" name="reset">
+</center>
+{%csrf_token%}
+</form>
+
+</td>
+</tr>
+</table>
+
+{% include "design/last.html" %}
+</body>
+</html>

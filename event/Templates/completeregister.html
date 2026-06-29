@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+  {% include "head.html"%}
+	
+</head>
+<body background="https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg">
+  {% include "temp1.html" %}
+  
+  <br>
+    <center><h1><b>EVENT ORGANIZER</b></h1></center>
+    <br><br>
+    <center>
+   <h4>Add Details</h4>
+   </center>
+
+   <center>{{msg}}</center>
+   <table align="center" width="60%">
+   	<tr><td>
+   	<form name="register" autocomplete="off" method="post">
+     <b><font color="red">*</font> Full Name</b>
+     <input required autofocus="on" class="form-control" type="text" name="fullname" >
+     <b><font color="red">*</font>Mobile Number</b>
+     <input required class="form-control" type="number" name="mobilenumber">
+  
+     <b><font color="red">*</font>no of guests</b>
+     <input required class="form-control" type="number" name="quantity">
+     <b>Food Type</b>
+        <select name="food" class="form-control" required>
+  <option value="" disabled selected hidden>Choose Food Category</option>
+  <option value="Veg">Veg</option>
+  <option value="Nonveg">Non Veg</option>
+  <option value="Veg&Nonveg">Veg & Nonveg</option>
+  </select>
+     <b>NO.OF Plates</b>
+                <input class="form-control" type="number" name="plates" required>
+                
+          <b>venue</b>
+<select class="form-select" name="venue" required>
+                  <option value="" disabled selected hidden>Select Venue</option>
+                  <option value="taj_lake">Taj Lake Palace, Udaipur</option>
+                  <option value="maharaja">Maharaja Palace, Banglore</option>
+                  <option value="royalorchid">Royal Orchid Resort, Mussoorie</option>
+                  <option value="shahpalace">Shah Palace, Hydrabad</option>
+                  <option value="mahaatmagandhi">Lalit Golf Resort,Goa</option>
+                </select>
+<b>Theme</b>
+<select class="form-select" name="theme" required >
+                  <option value="" disabled selected hidden>Select</option>
+                  <option value="contemporary">Contemporary</option>
+                  <option value="elegant">Elegant</option>
+                  
+                  <option value="circus">Carnival</option>
+                  <option value="bollywood">Bollywood</option>
+                  <option value="coastal">Coastal</option>
+                  <option value="southindian">South Indian</option>
+                </select>
+
+<b>Event Type</b>
+<select class="form-select" name="eventtype" required>
+          <option value="" disabled selected hidden>Choose Event Type</option>
+                  
+                  <option value="wedding">Wedding</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="gettogather">Get To Gather</option>
+                  <option value="formal">Formal</option>
+                  
+                </select>
+
+
+                 <b><font color="red">*</font>Event Date</b>
+     <input required class="form-control" type="date" name="date">
+
+     <br/>
+     <center>
+     	<input class="btn btn-success" type="submit" name="register" value="Register">
+     	<input class="btn btn-warning" type="reset" name="cancel" value="Cancel">
+     </center>
+     {%csrf_token%}
+     </form>
+     </td>
+     </tr>
+     </table>
+</body>
+
+</html>

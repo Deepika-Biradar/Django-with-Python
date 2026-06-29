@@ -1,0 +1,364 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <style>
+        /* style.css*/
+body { 
+  background-color: rgb(165, 192, 201); 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+  color: rgb(239, 238, 220); 
+} 
+
+.container { 
+  height: 414px; 
+  width: 368px; 
+  background-color: rgb(20, 21, 82); 
+  border: 2px solid white; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 15px; 
+  box-shadow: rgba(41, 40, 40, 0.2); 
+  gap: 30px; 
+  transition: transform 0.2s ease-in-out; 
+} 
+
+.container_box { 
+  display: flex; 
+  height: 800px; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 2vw; 
+  flex-wrap: wrap; 
+  margin-top: 20px; 
+} 
+
+.container:hover { 
+  transform: scale(1.1); 
+} 
+
+.cardutility { 
+  height: 80px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
+  font-size: 20px; 
+  border-radius: 10px; 
+} 
+
+.des { 
+  text-align: center; 
+  padding: 5px; 
+  margin: 1px; 
+  border-radius: 10px; 
+  text-justify: auto; 
+} 
+
+.spaceicon { 
+  gap: 10px; 
+} 
+
+#btnid { 
+  border-radius: 100%; 
+  height: 50px; 
+  width: 50px; 
+  position: relative; 
+} 
+
+img { 
+  width: 340px; 
+  height: 230px; 
+  border-radius: 10px; 
+  border: 5px solid white; 
+} 
+
+.course-title { 
+  font-size: 25px; 
+} 
+
+.response { 
+  margin-left: 20px; 
+} 
+
+.ratings { 
+  margin: 15px 0 0 80px; 
+  padding: 3px; 
+} 
+
+.rates { 
+  margin-left: 3px; 
+} 
+
+.explore_link { 
+  border: 1px solid white; 
+  border-radius: 5px; 
+  margin: 2px 0 0 70px; 
+  background-color: aliceblue; 
+} 
+
+.link_a { 
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+} 
+
+@media only screen and (max-width: 376px) { 
+  body { 
+    background-color: rgb(99, 176, 201); 
+  } 
+
+  .container { 
+    height: 300px; 
+    width: 300px; 
+    border-radius: 5px; 
+    gap: 10px; 
+  } 
+
+  img { 
+    width: 240px; 
+    height: 130px; 
+    border-radius: 10px; 
+    border: 5px solid white; 
+    margin-left: 25px; 
+  } 
+
+  .response { 
+    margin-left: 10px; 
+  } 
+
+  .ratings { 
+    margin: 5px 0 0 50px; 
+    padding: 3px; 
+  } 
+
+  .course-title { 
+    font-size: 10px; 
+  } 
+}
+
+    </style>
+  <meta charset="UTF-8"> 
+  <meta name="viewport"
+    content="width=device-width, 
+        initial-scale=1.0"> 
+  <title> 
+    Product Details layout template 
+  </title> 
+  <link rel="stylesheet"
+    href="style.css"> 
+</head> 
+
+<body> 
+  <div class="container_box"> 
+
+    <!-- Card 1 -->
+  <div class="container"> 
+      <div> 
+
+        <img src= 
+"https://i.ytimg.com/vi/9o57q8KMbPc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDILWKAA0eX2buxBLTlh5gwPEZmCA"
+          alt="GeeksforGeeksImage"> 
+        </div>
+        <div> 
+          <span class="response"> 
+            70k+ interested Geeks 
+          </span> 
+          <span class="ratings"> 
+            Ratings: 5.0 
+          </span> 
+        </div> 
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Full Stack Course 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          <div> 
+            Price: 
+            <span class="rates"> 
+              Rs.9000 
+            </span> 
+            <span class="explore_link"> 
+              <a href="#"
+              class="link_a"> 
+                Explore 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="container"> 
+      <div> 
+        <img src= 
+"https://assets.traveltriangle.com/blog/wp-content/uploads/2017/04/Best-Time-For-Your-Destination-Wedding-In-Udaipur.jpg"
+          alt="GeeksforGeeksImage"> 
+        </div>
+        <div> 
+          <span class="response"> 
+            70k+ interested Geeks 
+          </span> 
+          <span class="ratings"> 
+            Ratings: 5.0 
+          </span> 
+        </div> 
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Full Stack Course 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          <div> 
+            Price: 
+            <span class="rates"> 
+              Rs.9000 
+            </span> 
+            <span class="explore_link"> 
+              <a href="#"
+              class="link_a"> 
+                Explore 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+<div class="container"> 
+      <div> 
+        <img src= 
+"https://content.jdmagicbox.com/comp/mussoorie/08/9999pmuldelstd11508/catalogue/royal-orchid-fort-resort-picture-palace-mussoorie-hotels-j1liu1h.jpg"
+          alt="GeeksforGeeksImage">
+          </div> 
+        <div> 
+          <span class="response"> 
+            70k+ interested Geeks 
+          </span> 
+          <span class="ratings"> 
+            Ratings: 5.0 
+          </span> 
+        </div> 
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Full Stack Course 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          <div> 
+            Price: 
+            <span class="rates"> 
+              Rs.9000 
+            </span> 
+            <span class="explore_link"> 
+              <a href="#"
+              class="link_a"> 
+                Explore 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="container"> 
+      <div> 
+        <a href="nav">
+        <img src= 
+"https://cdn0.weddingwire.in/article/1302/original/1280/jpg/92031-unique-palace-wedding-venues-agoda-devigarh-palace.jpeg"
+          alt="GeeksforGeeksImage">
+          </a>
+          </div> 
+        <div> 
+          <span class="response"> 
+            70k+ interested Geeks 
+          </span> 
+          <span class="ratings"> 
+            Ratings: 5.0 
+          </span> 
+        </div> 
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          Full Stack Course 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          <div> 
+            Price: 
+            <span class="rates"> 
+              Rs.9000 
+            </span> 
+            <span class="explore_link"> 
+              <a href="#"
+              class="link_a"> 
+                Explore 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+    <div class="container"> 
+      <div> 
+        <a href="nav">
+        <img src= 
+"https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/6e/cb/c93404ba32d59e4f95a2d48aab8c773fc5c38d7df93e91865c45d74e528f.jpeg"
+          alt="GeeksforGeeksImage">
+        </a>
+          </div> 
+        
+        <div> 
+          <span class="response"> 
+            20k+ interested Geeks 
+          </span> 
+          <span class="ratings"> 
+            Ratings: 5.0 
+          </span> 
+        </div> 
+      </div> 
+      <div class="info front cardutility"> 
+        <div class="course-title"> 
+          DSA JAVA and C++ Course 
+        </div> 
+        <div class="des cardutility"> 
+          <div> 
+            Complete guidance 
+            from Biggner to Advance 
+          </div> 
+          <div> 
+            Price: 
+            <span class="rates">Rs.5000 </span> 
+            <span class="explore_link"> 
+              <a href="#" class="link_a"> 
+                Explore 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+
+</body> 
+
+</html>

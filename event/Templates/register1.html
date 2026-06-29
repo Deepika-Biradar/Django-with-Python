@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+  {% include "head.html"%}
+  
+ 
+  
+</head>
+<body background="https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg">
+  {% include "tempt.html" %}
+  
+  <br>
+    <center><h1><b>EVENT ORGANIZER</b></h1></center>
+    <br><br>
+    <center>
+   <h2>Registeration</h2>
+   </center>
+   <br>
+
+   <center>{{msg}}</center>
+   <table align="center" width="60%">
+   	<tr><td>
+   	<form name="register" autocomplete="off" method="post">
+     <b><font color="red">*</font> Full Name</b>
+     <input required autofocus="on" class="form-control" type="text" name="fullname" >
+     <b><font color="red">*</font>Mobile Number</b>
+     <input required class="form-control" type="number" name="mobilenumber">
+     <b><font color="red">*</font>Email Id</b>
+     <input required class="form-control" type="email" name="emailid">
+     <b><font color="red">*</font>Address</b>
+     <input required class="form-control" type="text" name="address">
+     <b><font color="red">*</font>Password</b>
+     <input required class="form-control" type="password" name="password" id="password" minlength="8">
+     
+     <br/>
+     <center>
+     	<input class="btn btn-success" type="submit" name="register" value="Register">
+     	<input class="btn btn-warning" type="reset" name="cancel" value="Cancel">
+     </center>
+     {%csrf_token%}
+     </form>
+     </td>
+     </tr>
+     </table>
+</body>
+</html>

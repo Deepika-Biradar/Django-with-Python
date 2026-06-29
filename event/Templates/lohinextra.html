@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+	<title>UserLogin</title>
+	
+</head>
+<body>
+	{% include "head.html"%}
+	{% include "tempt.html" %}
+
+
+  <center><h1><b>EVENT ORGANIZER</b></h1></center>
+    <br><br>
+    <center>
+   <h4> User Login</h4>
+   {{msg}}
+
+   </center>
+   <table align="center" width="60%">
+<tr>
+	<td>
+		
+		<b><form name="login" method="post">Email Id</b>
+			<input required class="form-control" type="email" name="emailid">
+
+<b>Password</b>
+
+<input required class="form-control" type="password" name="password">
+<center>
+<input class="btn btn-success" type="submit" name="login" value="login">
+<input class="btn btn-warning" type="reset" name="reset">
+</center>
+{%csrf_token%}
+</form>
+
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

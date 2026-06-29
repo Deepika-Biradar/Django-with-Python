@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body background="https://imgv3.fotor.com/images/share/Free-blue-gradient-pattern-background-from-Fotor.jpg">
+	{% include "head.html"%}
+  {% include "htemp.html" %}
+	<br>
+	<center><b><h1>EVENT ORGAZINER</h1></b></center>
+	<center>
+	<font color="red">{{msg}}</font>
+</center>
+	<form name="frmsearch" method="post" >
+		<table align = "center" class="table table-bordered">
+			<tr>
+				<td>
+			
+	<select class="form-select" name="searchby" required>
+	<option value=" ">search by</option>	
+	<option value="1">Mobile Number</option>
+	<option value="2">Full Name</option>
+</select>
+</td>
+<td>
+<input type="text" name="value" required class="form-control">
+</td>
+<td>
+	<input type="submit" name="btnsubmit" value="search" class="btn btn-primary">
+</td>
+</tr>
+</table>
+{%csrf_token%}
+</form>
+</center>
+<br/>
+{%if data%}
+
+<table class="table table-bordered">
+
+	<tr>
+		<b><th>ID</th>
+		<th>Full Name</th>
+		<th>Mobile Number</th>
+		<th>No of guests</th>
+		<th>Food</th>
+	
+		<th>Plates</th>
+		<th>Venue</th>
+		<th>Theme</th>
+		<th>EventType</th>
+		<th>Date</th>
+		<th>Delete</th></b>
+	</tr>
+	{%for d in data%}
+	<tr>
+		<td>{{d.id}}</td>
+		<td>{{d.fullname}}</td>
+		<td>{{d.mobilenumber}}</td>
+		<td>{{d.quantity}}
+   		<td>{{d.food}}</td>
+		<td>{{d.plates}}</td>
+		<td>{{d.venue}}</td>
+		<td>{{d.theme}}</td>
+		<td>{{d.eventtype}}</td>
+		<td>{{d.date}}</td>
+		
+		<td>
+			<form name="frmdelete" method="post">
+				<input type="hidden" name="rid" value="{{d.id}}">
+				<input type="submit" name="btnsubmit" value="X" class="btn btn-danger">
+				{%csrf_token%}
+			</form>
+		</td>
+	</tr>
+	{%endfor%}
+	
+</table>
+{%endif%}	
+
+
+
+</body>
+</html>
